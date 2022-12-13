@@ -11,7 +11,7 @@ const AllPost = (props) => {
 
     //On initial render of this component, this useEffect will run its request to our Server
     useEffect(()=>{
-        axios.get('http://localhost:3000/posts')
+        axios.get('https://project3-backend-jamie-chris.herokuapp.com/posts')
         .then((response)=> setPostList(response.data), (err)=> console.log(err))
         .catch((error)=> console.log(error))
 

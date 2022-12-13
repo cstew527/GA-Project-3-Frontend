@@ -15,7 +15,7 @@ const ShowPost = () =>{
 
 
     useEffect(()=>{
-        axios.get(`http://localhost:3000/posts/${id}`)
+        axios.get(`https://project3-backend-jamie-chris.herokuapp.com/posts/${id}`)
         .then((response)=>{
             console.log(response.data);
             setPost(response.data);
@@ -24,7 +24,7 @@ const ShowPost = () =>{
     }, [id])
 
     const handleDelete = () =>{
-        axios.delete(`http://localhost:3000/posts/${id}`)
+        axios.delete(`https://project3-backend-jamie-chris.herokuapp.com/posts/${id}`)
         .then((response)=>{
             console.log(response.data);
             setPost(response.data);

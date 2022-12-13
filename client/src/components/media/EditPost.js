@@ -15,7 +15,7 @@ const EditPost = () =>{
 
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/posts/${id}`)
+        axios.get(`https://project3-backend-jamie-chris.herokuapp.com/posts/${id}`)
         .then((res) => {
             console.log(res);
             console.log(res.data);
@@ -31,7 +31,7 @@ const EditPost = () =>{
 
     const handleSubmit = (event) =>{
         event.preventDefault();
-        axios.put(`http://localhost:3000/posts/${id}`, {
+        axios.put(`https://project3-backend-jamie-chris.herokuapp.com/posts/${id}`, {
             postName,
             image,
             comment,

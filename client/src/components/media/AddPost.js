@@ -15,7 +15,7 @@ const AddPost = (props) =>{
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post('http://localhost:3000/posts', {
+        axios.post('https://project3-backend-jamie-chris.herokuapp.com/posts', {
             postName,
             image,
             comment,

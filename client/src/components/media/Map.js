@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Map, {NavigationControl , GeolocateControl, Marker, Popup} from 'react-map-gl';
 import maplibregl from 'maplibre-gl';
-import Room from '@mui/icons-material/LocationOn';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';

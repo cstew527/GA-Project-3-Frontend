@@ -59,6 +59,18 @@ const EditPost = () =>{
                     <label htmlFor="comment" className="form-label">Comment: </label>
                     <input onChange={(event) => setComment(event.target.value)} value={comment} type="text" className="form-control" id="comment"/>
                 </div>
+                <div className="mb-3">
+                    <label htmlFor="image" className="form-label">Image: </label>
+                    <input onChange={(event) => setImage(event.target.value)} value={image} type="text" className="form-control" id="image"/>
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="date" className="form-label">Date</label>
+                    <input onChange={(event) => setDate(event.target.value)} value={date} type="text" className="form-control" id="date"/>
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="location" className="form-label">Location</label>
+                    <input onChange={(event) => setLocation(event.target.value)} value={location} type="text" className="form-control" id="location"/>
+                </div>
                 <button type="submit" className="btn btn-primary">Edit</button>
             </form>
         </div>

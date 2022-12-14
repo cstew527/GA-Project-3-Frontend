@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Map from './components/media/Map'
 import AddPost from '../src/components/media/AddPost';
 import AllPost from "./components/media/AllPost";
 import ShowPost from "./components/media/ShowPost";
@@ -23,7 +22,6 @@ const App = () =>{
               <Route path='/show/:id' element={<ShowPost/>}></Route>
               <Route path='/edit/:id' element={<EditPost/>}></Route>
               <Route path='/register' element={<Register/>}></Route>
-              <Route path='/map' element={<Map/>}></Route>
             </Routes>
           </Layout>
         </BrowserRouter>

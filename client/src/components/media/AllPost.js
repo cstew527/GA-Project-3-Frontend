@@ -25,7 +25,7 @@ const AllPost = (props) => {
                         <div className="row">
                             <div className="col-md-8">
                                 <div className="post-content">
-                                    <img src={post.image} alt="post-image" className="img-responsive post-image"/>
+                                    <img src={post.image} alt="post-image" className="img-responsive post-image" style={{maxHeight: "450px", maxHeight: "450px"}}/>
                                     <div className="post-container">
                                         <div className="post-detail">
                                             <div className="user-info">

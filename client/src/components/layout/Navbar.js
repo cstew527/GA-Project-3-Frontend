@@ -16,6 +16,9 @@ const Navbar = () => {
                         <li className="nav-item">
                             <a className="nav-link" href={'/'}>Create Post</a>
                         </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href={'/map'}>Map</a>
+                        </li>
                     </ul>
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
                         <li className="nav-item">

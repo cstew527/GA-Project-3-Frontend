@@ -52,6 +52,11 @@ const Register = () => {
                     <label htmlFor="password" className="form-label">Password</label>
                     <input type="password" className="form-control" value={user.password} placeholder="Your Password" id="password" onChange={handleChange}/>
                 </div>
+                <div className="col-md-4">
+                    <label htmlFor="reEnterPassword" className="form-label">Re-enter Password</label>
+                    <input type="password" className="form-control" value={user.reEnterPassword} placeholder="Re-enter Password" id="reEnterPassword" onChange={handleChange}/>
+                </div>
+                <button type="submit" className="btn btn-primary">Register</button>
             </form>
         </div>
     )
